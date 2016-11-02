@@ -16,11 +16,11 @@ use JSON qw/decode_json/;
                               
 =head1 NAME                   
                               
-elasticsearch_docs - A munin plugin that collects document stats of your elasticsearch instances
+elasticsearch_docs - A munin plugin that collects document stats of your Elasticsearch instances
                               
 =head1 APPLICABLE SYSTEMS     
                               
-elasticsearch
+Elasticsearch
 
 =head1 CONFIGURATION
 
@@ -62,7 +62,7 @@ foreach my $full_node_name (keys %{$data->{nodes}}) {
 }
 
 if ($ARGV[0] and $ARGV[0] eq 'config') {
-    print "graph_title elasticsearch documents\n";
+    print "graph_title Elasticsearch documents\n";
     print "graph_category elasticsearch\n";
 
     foreach my $name (keys %out) {
